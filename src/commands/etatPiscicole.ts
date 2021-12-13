@@ -1,11 +1,11 @@
-import { entryPoints } from '../../constants';
-import getRequest from '../../http';
-import { objectToStringParameters } from '../../utils/utils';
+import { entryPoints } from '../constants';
+import getRequest from '../http';
+import { objectToStringParameters } from '../utils/utils';
 import {
   CodeEspecePoissonParams,
   LieuxPecheParams,
   PoissonsParams
-} from '../../types/etatPiscicole';
+} from '../types/etatPiscicole';
 
 const etatPiscicole = () => {
   return {

@@ -1,12 +1,12 @@
-import etatPiscicole from './commands/etatPiscicole/etatPiscicole';
+import etatPiscicole from './commands/etatPiscicole';
+import indicateursServices from './commands/indicateursServices';
 
-import { IHubeauApi } from './types/hubeauApi';
-
-class HubeauApi implements IHubeauApi {
+class HubeauApi {
   etatPiscicole;
-
+  indicateursServices;
   constructor() {
     this.etatPiscicole = etatPiscicole();
+    this.indicateursServices = indicateursServices();
   }
 }
 module.exports = HubeauApi;

@@ -1,5 +1,4 @@
-declare type Mois = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
-declare type Format = 'json' | 'geojson';
+import { Format, Mois } from './communs';
 export declare type CodeEspecePoissonParams = {
     code?: string;
     fields?: string;
@@ -33,4 +32,3 @@ export declare type PoissonsParams = {
     size?: number;
     srid?: number;
 };
-export {};

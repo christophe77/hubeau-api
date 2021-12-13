@@ -1,5 +1,5 @@
 type Params = {
-  [key: string]: string | string[] | number | number[];
+  [key: string]: string | string[] | number | number[] | boolean;
 };
 export function objectToStringParameters(params: Params): string {
   let formattedParams = '';
