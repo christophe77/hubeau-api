@@ -26,16 +26,16 @@ ou <br />
 
 ### Etat piscicole
 
-Documentation api : https://hubeau.eaufrance.fr/page/api-poisson<br/>
-Exemples js : https://github.com/christophe77/hubeau-api-wrapper/blob/master/dist/exemples/etatPiscicole.js<br/>
+Exemples hubeau-api-wrapper : https://github.com/christophe77/hubeau-api-wrapper/blob/master/dist/exemples/etatPiscicole.js<br/>
+Documentation officielle : https://hubeau.eaufrance.fr/page/api-poisson<br/>
 
-_Code espèce poisson_
-_Lieux pêche_
-_Poissons_
+_Code espèce poisson_<br/>
+_Lieux pêche_<br/>
+_Poissons_<br/>
 
 ### Indicateurs services
 
-Documentation api : https://hubeau.eaufrance.fr/page/api-indicateurs-services<br/>
-Exemples js : https://github.com/christophe77/hubeau-api-wrapper/blob/master/dist/exemples/indicateursServices.js<br/>
+Exemples hubeau-api-wrapper : https://github.com/christophe77/hubeau-api-wrapper/blob/master/dist/exemples/indicateursServices.js<br/>
+Documentation officielle : https://hubeau.eaufrance.fr/page/api-indicateurs-services<br/>
 
-_communes_
+_communes_<br/>
