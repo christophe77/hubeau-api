@@ -1,5 +1,5 @@
-import etatPiscicole from './commands/etatPiscicole';
-import indicateursServices from './commands/indicateursServices';
+import etatPiscicole from './commandes/etatPiscicole';
+import indicateursServices from './commandes/indicateursServices';
 
 class HubeauApi {
   etatPiscicole;

@@ -36,6 +36,8 @@ Documentation officielle : https://hubeau.eaufrance.fr/page/api-poisson<br/>
 ### Indicateurs services
 
 _communes_<br/>
+_indicateurs_<br/>
+_services_<br/>
 
 Exemples hubeau-api-wrapper : [./dist/exemples/indicateursServices.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/dist/exemples/indicateursServices.js)<br/>
 Documentation officielle : https://hubeau.eaufrance.fr/page/api-indicateurs-services<br/>
