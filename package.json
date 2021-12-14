@@ -1,6 +1,6 @@
 {
   "name": "hubeau-api",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "hubeau api wrapper in javascript",
   "keywords": [
     "hubeau",
@@ -9,12 +9,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/christophe77/hubeau-api.git"
+    "url": "https://github.com/christophe77/hubeau-api-wrapper.git"
   },
   "bugs": {
-    "url": "https://github.com/christophe77/hubeau-api/issues"
+    "url": "https://github.com/christophe77/hubeau-api-wrapper/issues"
   },
-  "homepage": "https://github.com/christophe77/hubeau-api#readme",
+  "homepage": "https://github.com/christophe77/hubeau-api-wrapper#readme",
   "author": "christophe bellec",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
