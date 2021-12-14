@@ -26,125 +26,16 @@ ou <br />
 
 ### Etat piscicole
 
-documentation api : https://hubeau.eaufrance.fr/page/api-poisson<br/>
+Documentation api : https://hubeau.eaufrance.fr/page/api-poisson<br/>
+Exemples js : https://github.com/christophe77/hubeau-api-wrapper/blob/master/dist/exemples/etatPiscicole.js<br/>
 
 _Code espèce poisson_
-
-    async function code_espece_poisson() {
-        const params={
-            code: "ABL",
-            fields: "",
-            page: 1,
-            size: 1,
-        }
-        try {
-            const results = await hubeauApi.etatPiscicole.codeEspecePoisson(params);
-            console.log(results);
-        } catch (error) {
-            console.log(error);
-        }
-    }
-
-    async function code_espece_poisson_csv() {
-        const params={
-            code: "ABL",
-            fields: "",
-            page: 1,
-            size: 1,
-        }
-        try {
-            const results = await hubeauApi.etatPiscicole.codeEspecePoissonCsv(params);
-            console.log(results);
-        } catch (error) {
-            console.log(error);
-        }
-    }
-
 _Lieux pêche_
-
-    async function lieux_peche() {
-        const params = {
-            code_espece_poisson: 'ABL',
-            bbox: [1.6194, 47.7965, 2.191, 47.9988],
-        };
-        try {
-            const results = await hubeauApi.etatPiscicole.lieuxPeche(params);
-            console.log(results);
-        } catch (error) {
-            console.log(error);
-        }
-    }
-    async function lieux_peche_csv() {
-        const params = {
-            code_espece_poisson: 'ABL',
-            bbox: [1.6194, 47.7965, 2.191, 47.9988],
-        };
-        try {
-            const results = await hubeauApi.etatPiscicole.lieuxPecheCsv(params);
-            console.log(results);
-        } catch (error) {
-            console.log(error);
-        }
-    }
-
 _Poissons_
-
-    async function poissons() {
-        const params = {
-            code_espece_poisson: ['ABL', 'ECR', 'ABI'],
-            page: 1,
-            fields: ['code_station', 'localisation'],
-        };
-        try {
-            const results = await hubeauApi.etatPiscicole.poissons(params);
-            console.log(results);
-        } catch (error) {
-            console.log(error);
-        }
-    }
-
-    async function poissons_csv() {
-        const params = {
-            code_espece_poisson: ['ABL', 'ECR', 'ABI'],
-            page: 1,
-            fields: ['code_station', 'localisation'],
-        };
-        try {
-            const results = await hubeauApi.etatPiscicole.poissonsCsv(params);
-            console.log(results);
-        } catch (error) {
-            console.log(error);
-        }
-    }
 
 ### Indicateurs services
 
+Documentation api : https://hubeau.eaufrance.fr/page/api-indicateurs-services<br/>
+Exemples js : https://github.com/christophe77/hubeau-api-wrapper/blob/master/dist/exemples/indicateursServices.js<br/>
+
 _communes_
-
-    async function communes() {
-        const params = {
-            annee: 2019,
-            page: 1,
-            type_service: 'AEP',
-        };
-        try {
-            const results = await hubeauApi.indicateursServices.communes(params);
-            console.log(results);
-        } catch (error) {
-            console.log(error);
-        }
-    }
-
-    async function communesCsv() {
-        const params = {
-            annee: 2019,
-            page: 1,
-            type_service: 'AEP',
-        };
-        try {
-            const results = await hubeauApi.indicateursServices.communesCsv(params);
-            console.log(results);
-        } catch (error) {
-            console.log(error);
-        }
-    }
