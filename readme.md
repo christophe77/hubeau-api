@@ -41,3 +41,10 @@ _services_<br/>
 
 Exemples hubeau-api-wrapper : [./dist/exemples/indicateursServices.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/dist/exemples/indicateursServices.js)<br/>
 Documentation officielle : https://hubeau.eaufrance.fr/page/api-indicateurs-services<br/>
+
+### Piezométrie - Niveaux nappes
+
+_chroniques_<br/>
+
+Exemples hubeau-api-wrapper : [./dist/exemples/piezometrie.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/dist/exemples/piezometrie.js)<br/>
+Documentation officielle : https://hubeau.eaufrance.fr/page/api-piezometrie<br/>
