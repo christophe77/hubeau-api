@@ -8,4 +8,5 @@ exports.entryPoints = {
     piezometrie: '/api/v1/niveaux_nappes/',
     qualiteNappes: '/api/v1/qualite_nappes/',
     qualiteRivieres: '/api/v1/qualite_rivieres/',
+    temperature: '/api/v1/temperature/',
 };

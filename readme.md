@@ -68,3 +68,11 @@ _conditions environnementales physicochimique_<br/>
 
 Exemples hubeau-api-wrapper : [./dist/exemples/qualiteRivieres.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/dist/exemples/qualiteRivieres.js)<br/>
 Documentation officielle : https://hubeau.eaufrance.fr/page/api-qualite-cours-deau<br/>
+
+### Température des cours d'eau en continu
+
+_chronique_<br/>
+_station_<br/>
+
+Exemples hubeau-api-wrapper : [./dist/exemples/temperature.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/dist/exemples/temperature.js)<br/>
+Documentation officielle : https://hubeau.eaufrance.fr/page/api-temperature-continu<br/>

@@ -5,4 +5,5 @@ export declare const entryPoints: {
     piezometrie: string;
     qualiteNappes: string;
     qualiteRivieres: string;
+    temperature: string;
 };
