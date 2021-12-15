@@ -1,4 +1,4 @@
-const HubeauApi = require('..');
+const HubeauApi = require('..').default;
 const hubeauApi = new HubeauApi();
 
 async function chronique() {
@@ -37,7 +37,7 @@ async function station() {
     size: 1,
   };
   try {
-    const results = await hubeauApi.temperature.station(params);
+    const results = await hubeauApi.temperature.station(params)
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -57,4 +57,3 @@ async function stationCsv() {
     console.log(error);
   }
 }
-station();
