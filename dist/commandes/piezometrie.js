@@ -17,14 +17,34 @@ const http_1 = __importDefault(require("../http"));
 const utils_1 = require("../utils/utils");
 const piezometrie = () => {
     return {
-        niveauxNappes: (params) => __awaiter(void 0, void 0, void 0, function* () {
+        chroniques: (params) => __awaiter(void 0, void 0, void 0, function* () {
             const formattedParams = params ? (0, utils_1.objectToStringParameters)(params) : '';
             const datas = yield (0, http_1.default)(constants_1.entryPoints.piezometrie, `/chroniques?${formattedParams}`);
             return datas;
         }),
-        niveauxNappesCsv: (params) => __awaiter(void 0, void 0, void 0, function* () {
+        chroniquesCsv: (params) => __awaiter(void 0, void 0, void 0, function* () {
             const formattedParams = params ? (0, utils_1.objectToStringParameters)(params) : '';
             const datas = yield (0, http_1.default)(constants_1.entryPoints.piezometrie, `/chroniques.csv?${formattedParams}`);
+            return datas;
+        }),
+        chroniquesTr: (params) => __awaiter(void 0, void 0, void 0, function* () {
+            const formattedParams = params ? (0, utils_1.objectToStringParameters)(params) : '';
+            const datas = yield (0, http_1.default)(constants_1.entryPoints.piezometrie, `/chroniques_tr?${formattedParams}`);
+            return datas;
+        }),
+        chroniquesTrCsv: (params) => __awaiter(void 0, void 0, void 0, function* () {
+            const formattedParams = params ? (0, utils_1.objectToStringParameters)(params) : '';
+            const datas = yield (0, http_1.default)(constants_1.entryPoints.piezometrie, `/chroniques_tr.csv?${formattedParams}`);
+            return datas;
+        }),
+        stations: (params) => __awaiter(void 0, void 0, void 0, function* () {
+            const formattedParams = params ? (0, utils_1.objectToStringParameters)(params) : '';
+            const datas = yield (0, http_1.default)(constants_1.entryPoints.piezometrie, `/stations?${formattedParams}`);
+            return datas;
+        }),
+        stationsCsv: (params) => __awaiter(void 0, void 0, void 0, function* () {
+            const formattedParams = params ? (0, utils_1.objectToStringParameters)(params) : '';
+            const datas = yield (0, http_1.default)(constants_1.entryPoints.piezometrie, `/stations.csv?${formattedParams}`);
             return datas;
         }),
     };
