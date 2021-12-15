@@ -76,3 +76,13 @@ _station_<br/>
 
 Exemples hubeau-api-wrapper : [./dist/exemples/temperature.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/dist/exemples/temperature.js)<br/>
 Documentation officielle : https://hubeau.eaufrance.fr/page/api-temperature-continu<br/>
+
+### Hydrométrie
+
+_observations_<br/>
+_observations élaborées_<br/>
+_référentiel sites_<br/>
+_référentiel stations_<br/>
+
+Exemples hubeau-api-wrapper : [./dist/exemples/hydrometrie.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/dist/exemples/hydrometrie.js)<br/>
+Documentation officielle : https://hubeau.eaufrance.fr/page/api-hydrometrie<br/>

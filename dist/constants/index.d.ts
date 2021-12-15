@@ -6,4 +6,5 @@ export declare const entryPoints: {
     qualiteNappes: string;
     qualiteRivieres: string;
     temperature: string;
+    hydrometrie: string;
 };
