@@ -50,3 +50,11 @@ _stations_<br/>
 
 Exemples hubeau-api-wrapper : [./dist/exemples/piezometrie.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/dist/exemples/piezometrie.js)<br/>
 Documentation officielle : https://hubeau.eaufrance.fr/page/api-piezometrie<br/>
+
+### Qualité nappes
+
+_analyses_<br/>
+_stations_<br/>
+
+Exemples hubeau-api-wrapper : [./dist/exemples/qualiteNappes.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/dist/exemples/qualiteNappes.js)<br/>
+Documentation officielle : https://hubeau.eaufrance.fr/page/api-qualite-nappes<br/>
