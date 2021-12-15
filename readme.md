@@ -58,3 +58,13 @@ _stations_<br/>
 
 Exemples hubeau-api-wrapper : [./dist/exemples/qualiteNappes.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/dist/exemples/qualiteNappes.js)<br/>
 Documentation officielle : https://hubeau.eaufrance.fr/page/api-qualite-nappes<br/>
+
+### Qualité cours d'eau
+
+_analyse physicochimique_<br/>
+_station physicochimique_<br/>
+_operation physicochimique_<br/>
+_conditions environnementales physicochimique_<br/>
+
+Exemples hubeau-api-wrapper : [./dist/exemples/qualiteRivieres.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/dist/exemples/qualiteRivieres.js)<br/>
+Documentation officielle : https://hubeau.eaufrance.fr/page/api-qualite-cours-deau<br/>

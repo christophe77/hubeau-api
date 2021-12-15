@@ -4,4 +4,5 @@ export declare const entryPoints: {
     indicateursServices: string;
     piezometrie: string;
     qualiteNappes: string;
+    qualiteRivieres: string;
 };
