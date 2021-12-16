@@ -30,9 +30,9 @@ CommonJs : <br />
 
 ### Etat piscicole
 
-_Code espèce poisson_<br/>
-_Lieux pêche_<br/>
-_Poissons_<br/>
+_code espèce poisson_<br/>
+_lieux pêche_<br/>
+_poissons_<br/>
 
 Exemples :<br/>
 CommonJS : [./exemples/cjs/etatPiscicole.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/cjs/etatPiscicole.js)<br/>
@@ -115,3 +115,14 @@ Exemples :<br/>
 CommonJS : [./exemples/cjs/prelevements.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/cjs/prelevements.js)<br/>
 ESM : [./exemples/esm/prelevements.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/esm/prelevements.js)<br/>
 Documentation officielle : https://hubeau.eaufrance.fr/page/api-prelevements-eau<br/>
+
+### Hydrobiologie
+
+_indices_<br/>
+_stations hydrobiologie_<br/>
+_taxons_<br/>
+
+Exemples :<br/>
+CommonJS : [./exemples/cjs/hydrobio.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/cjs/hydrobio.js)<br/>
+ESM : [./exemples/esm/hydrobio.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/esm/hydrobio.js)<br/>
+Documentation officielle : https://hubeau.eaufrance.fr/page/api-hydrobiologie<br/>

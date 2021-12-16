@@ -6,6 +6,7 @@ import qualiteRivieres from './commandes/qualiteRivieres';
 import temperature from './commandes/temperature';
 import hydrometrie from './commandes/hydrometrie';
 import prelevements from './commandes/prelevements';
+import hydrobio from './commandes/hydrobio';
 
 export {
   etatPiscicole,
@@ -15,5 +16,6 @@ export {
   qualiteRivieres,
   temperature,
   hydrometrie,
-  prelevements
+  prelevements,
+  hydrobio,
 };

@@ -8,4 +8,5 @@ export declare const entryPoints: {
     temperature: string;
     hydrometrie: string;
     prelevements: string;
+    hydrobio: string;
 };

@@ -8,4 +8,5 @@ export var entryPoints = {
     temperature: '/api/v1/temperature/',
     hydrometrie: '/api/v1/hydrometrie/',
     prelevements: '/api/v1/prelevements/',
+    hydrobio: '/api/vbeta/hydrobio/',
 };
