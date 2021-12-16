@@ -1,6 +1,7 @@
 import { entryPoints } from '../constants';
 import getRequest from '../http';
 import { objectToStringParameters } from '../utils/utils';
+import { HubeauResponse } from '../types/communs';
 import {
   AnalysePcParams,
   StationPcParams,
@@ -9,7 +10,7 @@ import {
 } from '../types/qualiteRivieres';
 
 const qualiteRivieres = {
-  analysePc: async (params?: AnalysePcParams): Promise<string> => {
+  analysePc: async (params?: AnalysePcParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.qualiteRivieres,
@@ -17,7 +18,7 @@ const qualiteRivieres = {
     );
     return datas;
   },
-  analysePcCsv: async (params?: AnalysePcParams): Promise<string> => {
+  analysePcCsv: async (params?: AnalysePcParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.qualiteRivieres,
@@ -25,7 +26,7 @@ const qualiteRivieres = {
     );
     return datas;
   },
-  stationPc: async (params?: StationPcParams): Promise<string> => {
+  stationPc: async (params?: StationPcParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.qualiteRivieres,
@@ -33,7 +34,7 @@ const qualiteRivieres = {
     );
     return datas;
   },
-  stationPcCsv: async (params?: StationPcParams): Promise<string> => {
+  stationPcCsv: async (params?: StationPcParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.qualiteRivieres,
@@ -41,7 +42,7 @@ const qualiteRivieres = {
     );
     return datas;
   },
-  operationPc: async (params?: OperationPcParams): Promise<string> => {
+  operationPc: async (params?: OperationPcParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.qualiteRivieres,
@@ -49,7 +50,9 @@ const qualiteRivieres = {
     );
     return datas;
   },
-  operationPcCsv: async (params?: OperationPcParams): Promise<string> => {
+  operationPcCsv: async (
+    params?: OperationPcParams,
+  ): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.qualiteRivieres,
@@ -59,7 +62,7 @@ const qualiteRivieres = {
   },
   conditionEnvironnementalePc: async (
     params?: ConditionEnvironnementaleParams,
-  ): Promise<string> => {
+  ): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.qualiteRivieres,
@@ -69,7 +72,7 @@ const qualiteRivieres = {
   },
   conditionEnvironnementalePcCsv: async (
     params?: ConditionEnvironnementaleParams,
-  ): Promise<string> => {
+  ): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.qualiteRivieres,

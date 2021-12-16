@@ -1,6 +1,8 @@
 # HUBEAU API wrapper
 
 HUBEAU API wrapper JS.<br/>
+
+Module compatible avec les applications NodeJS et les applications web.<br />
 Infos sur l'API HUBEAU : https://hubeau.eaufrance.fr/page/apis<br/>
 
 Travail en cours...<br/>

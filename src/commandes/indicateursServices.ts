@@ -1,6 +1,7 @@
 import { entryPoints } from '../constants';
 import getRequest from '../http';
 import { objectToStringParameters } from '../utils/utils';
+import { HubeauResponse } from '../types/communs';
 import {
   CommunesParams,
   IndicateursParams,
@@ -8,7 +9,7 @@ import {
 } from '../types/indicateursServices';
 
 const indicateursServices = {
-  communes: async (params?: CommunesParams): Promise<string> => {
+  communes: async (params?: CommunesParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.indicateursServices,
@@ -16,7 +17,7 @@ const indicateursServices = {
     );
     return datas;
   },
-  communesCsv: async (params?: CommunesParams): Promise<string> => {
+  communesCsv: async (params?: CommunesParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.indicateursServices,
@@ -24,7 +25,7 @@ const indicateursServices = {
     );
     return datas;
   },
-  indicateurs: async (params?: IndicateursParams): Promise<string> => {
+  indicateurs: async (params?: IndicateursParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.indicateursServices,
@@ -32,7 +33,9 @@ const indicateursServices = {
     );
     return datas;
   },
-  indicateursCsv: async (params?: IndicateursParams): Promise<string> => {
+  indicateursCsv: async (
+    params?: IndicateursParams,
+  ): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.indicateursServices,
@@ -40,7 +43,7 @@ const indicateursServices = {
     );
     return datas;
   },
-  services: async (params?: ServicesParams): Promise<string> => {
+  services: async (params?: ServicesParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.indicateursServices,
@@ -48,7 +51,7 @@ const indicateursServices = {
     );
     return datas;
   },
-  servicesCsv: async (params?: ServicesParams): Promise<string> => {
+  servicesCsv: async (params?: ServicesParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.indicateursServices,

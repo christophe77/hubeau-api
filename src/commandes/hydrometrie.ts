@@ -1,6 +1,7 @@
 import { entryPoints } from '../constants';
 import getRequest from '../http';
 import { objectToStringParameters } from '../utils/utils';
+import { HubeauResponse } from '../types/communs';
 import {
   ObsElabParams,
   ObservationsTrParams,
@@ -9,7 +10,7 @@ import {
 } from '../types/hydrometrie';
 
 const hydrometrie = {
-  obsElab: async (params?: ObsElabParams): Promise<string> => {
+  obsElab: async (params?: ObsElabParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.hydrometrie,
@@ -17,7 +18,7 @@ const hydrometrie = {
     );
     return datas;
   },
-  obsElabCsv: async (params?: ObsElabParams): Promise<string> => {
+  obsElabCsv: async (params?: ObsElabParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.hydrometrie,
@@ -25,7 +26,9 @@ const hydrometrie = {
     );
     return datas;
   },
-  observationsTr: async (params?: ObservationsTrParams): Promise<string> => {
+  observationsTr: async (
+    params?: ObservationsTrParams,
+  ): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.hydrometrie,
@@ -33,7 +36,9 @@ const hydrometrie = {
     );
     return datas;
   },
-  observationsTrCsv: async (params?: ObservationsTrParams): Promise<string> => {
+  observationsTrCsv: async (
+    params?: ObservationsTrParams,
+  ): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.hydrometrie,
@@ -41,7 +46,9 @@ const hydrometrie = {
     );
     return datas;
   },
-  observationsTrXml: async (params?: ObservationsTrParams): Promise<string> => {
+  observationsTrXml: async (
+    params?: ObservationsTrParams,
+  ): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.hydrometrie,
@@ -51,7 +58,7 @@ const hydrometrie = {
   },
   referentielSites: async (
     params?: ReferentielSitesParams,
-  ): Promise<string> => {
+  ): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.hydrometrie,
@@ -61,7 +68,7 @@ const hydrometrie = {
   },
   referentielSitesCsv: async (
     params?: ReferentielSitesParams,
-  ): Promise<string> => {
+  ): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.hydrometrie,
@@ -71,7 +78,7 @@ const hydrometrie = {
   },
   referentielSitesXml: async (
     params?: ReferentielSitesParams,
-  ): Promise<string> => {
+  ): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.hydrometrie,
@@ -81,7 +88,7 @@ const hydrometrie = {
   },
   referentielStations: async (
     params?: ReferentielStationsParams,
-  ): Promise<string> => {
+  ): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.hydrometrie,
@@ -91,7 +98,7 @@ const hydrometrie = {
   },
   referentielStationsCsv: async (
     params?: ReferentielStationsParams,
-  ): Promise<string> => {
+  ): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.hydrometrie,
@@ -101,7 +108,7 @@ const hydrometrie = {
   },
   referentielStationsXml: async (
     params?: ReferentielStationsParams,
-  ): Promise<string> => {
+  ): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.hydrometrie,

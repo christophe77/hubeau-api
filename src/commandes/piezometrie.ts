@@ -1,6 +1,7 @@
 import { entryPoints } from '../constants';
 import getRequest from '../http';
 import { objectToStringParameters } from '../utils/utils';
+import { HubeauResponse } from '../types/communs';
 import {
   ChroniquesParams,
   ChroniquesTrParams,
@@ -8,7 +9,7 @@ import {
 } from '../types/piezometrie';
 
 const piezometrie = {
-  chroniques: async (params?: ChroniquesParams): Promise<string> => {
+  chroniques: async (params?: ChroniquesParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.piezometrie,
@@ -16,7 +17,7 @@ const piezometrie = {
     );
     return datas;
   },
-  chroniquesCsv: async (params?: ChroniquesParams): Promise<string> => {
+  chroniquesCsv: async (params?: ChroniquesParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.piezometrie,
@@ -24,7 +25,9 @@ const piezometrie = {
     );
     return datas;
   },
-  chroniquesTr: async (params?: ChroniquesTrParams): Promise<string> => {
+  chroniquesTr: async (
+    params?: ChroniquesTrParams,
+  ): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.piezometrie,
@@ -32,7 +35,9 @@ const piezometrie = {
     );
     return datas;
   },
-  chroniquesTrCsv: async (params?: ChroniquesTrParams): Promise<string> => {
+  chroniquesTrCsv: async (
+    params?: ChroniquesTrParams,
+  ): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.piezometrie,
@@ -40,7 +45,7 @@ const piezometrie = {
     );
     return datas;
   },
-  stations: async (params?: StationsParams): Promise<string> => {
+  stations: async (params?: StationsParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.piezometrie,
@@ -48,7 +53,7 @@ const piezometrie = {
     );
     return datas;
   },
-  stationsCsv: async (params?: StationsParams): Promise<string> => {
+  stationsCsv: async (params?: StationsParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.piezometrie,

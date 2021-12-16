@@ -1,6 +1,7 @@
 import { entryPoints } from '../constants';
 import getRequest from '../http';
 import { objectToStringParameters } from '../utils/utils';
+import { HubeauResponse } from '../types/communs';
 import {
   CodeEspecePoissonParams,
   LieuxPecheParams,
@@ -10,7 +11,7 @@ import {
 const etatPiscicole = {
   codeEspecePoisson: async (
     params?: CodeEspecePoissonParams,
-  ): Promise<string> => {
+  ): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.etatPiscicole,
@@ -20,7 +21,7 @@ const etatPiscicole = {
   },
   codeEspecePoissonCsv: async (
     params?: CodeEspecePoissonParams,
-  ): Promise<string> => {
+  ): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.etatPiscicole,
@@ -28,7 +29,7 @@ const etatPiscicole = {
     );
     return datas;
   },
-  lieuxPeche: async (params?: LieuxPecheParams): Promise<string> => {
+  lieuxPeche: async (params?: LieuxPecheParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.etatPiscicole,
@@ -36,7 +37,7 @@ const etatPiscicole = {
     );
     return datas;
   },
-  lieuxPecheCsv: async (params?: LieuxPecheParams): Promise<string> => {
+  lieuxPecheCsv: async (params?: LieuxPecheParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.etatPiscicole,
@@ -44,7 +45,7 @@ const etatPiscicole = {
     );
     return datas;
   },
-  poissons: async (params?: PoissonsParams): Promise<string> => {
+  poissons: async (params?: PoissonsParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.etatPiscicole,
@@ -52,7 +53,7 @@ const etatPiscicole = {
     );
     return datas;
   },
-  poissonsCsv: async (params?: PoissonsParams): Promise<string> => {
+  poissonsCsv: async (params?: PoissonsParams): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.etatPiscicole,
