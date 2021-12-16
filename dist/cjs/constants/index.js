@@ -10,4 +10,5 @@ exports.entryPoints = {
     qualiteRivieres: '/api/v1/qualite_rivieres/',
     temperature: '/api/v1/temperature/',
     hydrometrie: '/api/v1/hydrometrie/',
+    prelevements: '/api/v1/prelevements/',
 };

@@ -3,6 +3,7 @@
 HUBEAU API wrapper JS.<br/>
 
 Module compatible avec les applications NodeJS et les applications web.<br />
+
 Infos sur l'API HUBEAU : https://hubeau.eaufrance.fr/page/apis<br/>
 
 Travail en cours...<br/>
@@ -103,3 +104,14 @@ Exemples :<br/>
 CommonJS : [./exemples/cjs/hydrometrie.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/cjs/hydrometrie.js)<br/>
 ESM : [./exemples/esm/hydrometrie.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/esm/hydrometrie.js)<br/>
 Documentation officielle : https://hubeau.eaufrance.fr/page/api-hydrometrie<br/>
+
+### Prélèvements en eau
+
+_chroniques_<br/>
+_référentiel ouvrages_<br/>
+_référentiel points de prélèvement_<br/>
+
+Exemples :<br/>
+CommonJS : [./exemples/cjs/prelevements.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/cjs/prelevements.js)<br/>
+ESM : [./exemples/esm/prelevements.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/esm/prelevements.js)<br/>
+Documentation officielle : https://hubeau.eaufrance.fr/page/api-prelevements-eau<br/>
