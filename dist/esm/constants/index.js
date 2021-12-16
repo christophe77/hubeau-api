@@ -10,4 +10,5 @@ export var entryPoints = {
     prelevements: '/api/v1/prelevements/',
     hydrobio: '/api/vbeta/hydrobio/',
     surveillanceLittoral: '/api/vbeta/surveillance_littoral/',
+    qualiteEauPotable: '/api/vbeta/qualite_eau_potable/',
 };

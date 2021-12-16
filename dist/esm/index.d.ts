@@ -8,4 +8,5 @@ import hydrometrie from './commandes/hydrometrie';
 import prelevements from './commandes/prelevements';
 import hydrobio from './commandes/hydrobio';
 import surveillanceLittoral from './commandes/surveillanceLittoral';
-export { etatPiscicole, indicateursServices, piezometrie, qualiteNappes, qualiteRivieres, temperature, hydrometrie, prelevements, hydrobio, surveillanceLittoral, };
+import qualiteEauPotable from './commandes/qualiteEauPotable';
+export { etatPiscicole, indicateursServices, piezometrie, qualiteNappes, qualiteRivieres, temperature, hydrometrie, prelevements, hydrobio, surveillanceLittoral, qualiteEauPotable };

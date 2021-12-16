@@ -8,6 +8,7 @@ import hydrometrie from './commandes/hydrometrie';
 import prelevements from './commandes/prelevements';
 import hydrobio from './commandes/hydrobio';
 import surveillanceLittoral from './commandes/surveillanceLittoral';
+import qualiteEauPotable from './commandes/qualiteEauPotable';
 
 export {
   etatPiscicole,
@@ -20,4 +21,5 @@ export {
   prelevements,
   hydrobio,
   surveillanceLittoral,
+  qualiteEauPotable
 };

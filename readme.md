@@ -2,11 +2,10 @@
 
 HUBEAU API wrapper JS.<br/>
 
-Module compatible avec les applications NodeJS et les applications web.<br />
+Wrapper de l'api Hubeau en typescript.<br />
+Fonctionne dans tout type d'application javascript.<br />
 
-Infos sur l'API HUBEAU : https://hubeau.eaufrance.fr/page/apis<br/>
-
-Travail en cours...<br/>
+Plus d'infos sur l'API HUBEAU : https://hubeau.eaufrance.fr/page/apis<br/>
 
 ## Installation
 
@@ -136,3 +135,13 @@ Exemples :<br/>
 CommonJS : [./exemples/cjs/surveillanceLittoral.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/cjs/surveillanceLittoral.js)<br/>
 ESM : [./exemples/esm/surveillanceLittoral.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/esm/surveillanceLittoral.js)<br/>
 Documentation officielle : https://hubeau.eaufrance.fr/page/api-surveillance-littoral<br/>
+
+### Qualité Eau Potable
+
+_communes et UDI_<br/>
+_résultats_<br/>
+
+Exemples :<br/>
+CommonJS : [./exemples/cjs/qualiteEauPotable.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/cjs/qualiteEauPotable.js)<br/>
+ESM : [./exemples/esm/qualiteEauPotable.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/esm/qualiteEauPotable.js)<br/>
+Documentation officielle : https://hubeau.eaufrance.fr/page/api-qualite-eau-potable<br/>

@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.surveillanceLittoral = exports.hydrobio = exports.prelevements = exports.hydrometrie = exports.temperature = exports.qualiteRivieres = exports.qualiteNappes = exports.piezometrie = exports.indicateursServices = exports.etatPiscicole = void 0;
+exports.qualiteEauPotable = exports.surveillanceLittoral = exports.hydrobio = exports.prelevements = exports.hydrometrie = exports.temperature = exports.qualiteRivieres = exports.qualiteNappes = exports.piezometrie = exports.indicateursServices = exports.etatPiscicole = void 0;
 var etatPiscicole_1 = __importDefault(require("./commandes/etatPiscicole"));
 exports.etatPiscicole = etatPiscicole_1.default;
 var indicateursServices_1 = __importDefault(require("./commandes/indicateursServices"));
@@ -24,3 +24,5 @@ var hydrobio_1 = __importDefault(require("./commandes/hydrobio"));
 exports.hydrobio = hydrobio_1.default;
 var surveillanceLittoral_1 = __importDefault(require("./commandes/surveillanceLittoral"));
 exports.surveillanceLittoral = surveillanceLittoral_1.default;
+var qualiteEauPotable_1 = __importDefault(require("./commandes/qualiteEauPotable"));
+exports.qualiteEauPotable = qualiteEauPotable_1.default;
