@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "esnext",
+    "target": "es5",
     "esModuleInterop": true,
     "declaration": true,
-    "outDir": "dist",
-    "target": "es6",
+    "outDir": "dist/esm",
+    "moduleResolution": "node",
     "strict": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["dist/**/*"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }

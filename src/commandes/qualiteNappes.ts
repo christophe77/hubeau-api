@@ -3,8 +3,7 @@ import getRequest from '../http';
 import { objectToStringParameters } from '../utils/utils';
 import { AnalysesParams, StationsParams } from '../types/qualiteNappes';
 
-const qualiteNappes = () => {
-  return {
+const qualiteNappes = {
     analyses: async (params?: AnalysesParams): Promise<string> => {
       const formattedParams = params ? objectToStringParameters(params) : '';
       const datas = await getRequest(
@@ -37,7 +36,6 @@ const qualiteNappes = () => {
       );
       return datas;
     },
-  };
 };
 
 export default qualiteNappes;
