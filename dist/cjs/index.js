@@ -3,20 +3,18 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.hydrometrie = exports.temperature = exports.qualiteRivieres = exports.qualiteNappes = exports.piezometrie = exports.indicateursServices = exports.etatPiscicole = void 0;
 var etatPiscicole_1 = __importDefault(require("./commandes/etatPiscicole"));
+exports.etatPiscicole = etatPiscicole_1.default;
 var indicateursServices_1 = __importDefault(require("./commandes/indicateursServices"));
+exports.indicateursServices = indicateursServices_1.default;
 var piezometrie_1 = __importDefault(require("./commandes/piezometrie"));
+exports.piezometrie = piezometrie_1.default;
 var qualiteNappes_1 = __importDefault(require("./commandes/qualiteNappes"));
+exports.qualiteNappes = qualiteNappes_1.default;
 var qualiteRivieres_1 = __importDefault(require("./commandes/qualiteRivieres"));
+exports.qualiteRivieres = qualiteRivieres_1.default;
 var temperature_1 = __importDefault(require("./commandes/temperature"));
+exports.temperature = temperature_1.default;
 var hydrometrie_1 = __importDefault(require("./commandes/hydrometrie"));
-var hubeauApi = {
-    etatPiscicole: etatPiscicole_1.default,
-    indicateursServices: indicateursServices_1.default,
-    piezometrie: piezometrie_1.default,
-    qualiteNappes: qualiteNappes_1.default,
-    qualiteRivieres: qualiteRivieres_1.default,
-    temperature: temperature_1.default,
-    hydrometrie: hydrometrie_1.default,
-};
-module.exports = hubeauApi;
+exports.hydrometrie = hydrometrie_1.default;

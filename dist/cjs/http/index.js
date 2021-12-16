@@ -39,31 +39,24 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var https_1 = __importDefault(require("https"));
+var superagent_1 = __importDefault(require("superagent"));
 var constants_1 = require("../constants");
 function getRequest(entryPoint, args) {
     return __awaiter(this, void 0, void 0, function () {
+        var res, err_1;
         return __generator(this, function (_a) {
-            return [2 /*return*/, new Promise(function (resolve, reject) {
-                    var options = {
-                        hostname: constants_1.hostname,
-                        path: "".concat(entryPoint).concat(args),
-                        port: 443,
-                        method: 'GET',
-                    };
-                    var body = [];
-                    var req = https_1.default.request(options, function (res) {
-                        res.on('data', function (chunk) { return body.push(chunk); });
-                        res.on('end', function () {
-                            var data = Buffer.concat(body).toString();
-                            resolve(data);
-                        });
-                    });
-                    req.on('error', function (e) {
-                        reject(e);
-                    });
-                    req.end();
-                })];
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 2, , 3]);
+                    return [4 /*yield*/, superagent_1.default.get("".concat(constants_1.hostname).concat(entryPoint).concat(args))];
+                case 1:
+                    res = _a.sent();
+                    return [2 /*return*/, res.text];
+                case 2:
+                    err_1 = _a.sent();
+                    return [2 /*return*/, err_1.toString()];
+                case 3: return [2 /*return*/];
+            }
         });
     });
 }

@@ -6,7 +6,7 @@ import qualiteRivieres from './commandes/qualiteRivieres';
 import temperature from './commandes/temperature';
 import hydrometrie from './commandes/hydrometrie';
 
-const hubeauApi = {
+export {
   etatPiscicole,
   indicateursServices,
   piezometrie,
@@ -15,4 +15,3 @@ const hubeauApi = {
   temperature,
   hydrometrie,
 };
-module.exports = hubeauApi;

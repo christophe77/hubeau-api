@@ -34,31 +34,24 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-import https from 'https';
+import superagent from 'superagent';
 import { hostname } from '../constants';
 function getRequest(entryPoint, args) {
     return __awaiter(this, void 0, void 0, function () {
+        var res, err_1;
         return __generator(this, function (_a) {
-            return [2 /*return*/, new Promise(function (resolve, reject) {
-                    var options = {
-                        hostname: hostname,
-                        path: "".concat(entryPoint).concat(args),
-                        port: 443,
-                        method: 'GET',
-                    };
-                    var body = [];
-                    var req = https.request(options, function (res) {
-                        res.on('data', function (chunk) { return body.push(chunk); });
-                        res.on('end', function () {
-                            var data = Buffer.concat(body).toString();
-                            resolve(data);
-                        });
-                    });
-                    req.on('error', function (e) {
-                        reject(e);
-                    });
-                    req.end();
-                })];
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 2, , 3]);
+                    return [4 /*yield*/, superagent.get("".concat(hostname).concat(entryPoint).concat(args))];
+                case 1:
+                    res = _a.sent();
+                    return [2 /*return*/, res.text];
+                case 2:
+                    err_1 = _a.sent();
+                    return [2 /*return*/, err_1.toString()];
+                case 3: return [2 /*return*/];
+            }
         });
     });
 }

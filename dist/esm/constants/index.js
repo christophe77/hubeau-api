@@ -1,4 +1,4 @@
-export var hostname = 'hubeau.eaufrance.fr';
+export var hostname = 'https://hubeau.eaufrance.fr';
 export var entryPoints = {
     etatPiscicole: '/api/v0/etat_piscicole/',
     indicateursServices: '/api/v0/indicateurs_services/',

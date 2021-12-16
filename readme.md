@@ -2,6 +2,7 @@
 
 HUBEAU API wrapper JS.<br/>
 Infos sur l'API HUBEAU : https://hubeau.eaufrance.fr/page/apis<br/>
+
 Travail en cours...<br/>
 
 ## Installation
@@ -14,9 +15,11 @@ ou <br />
 
 ensuite importation de la dépendance : <br />
 
-    import hubeauApi from 'hubeau-api';
+ESM :<br />
 
-ou <br />
+    import { hydrometrie, etatPiscicole , ... } from "hubeau-api";
+
+CommonJs : <br />
 
     const hubeauApi = require('hubeau-api');
 
