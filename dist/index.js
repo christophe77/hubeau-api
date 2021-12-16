@@ -21,4 +21,4 @@ class HubeauApi {
         this.hydrometrie = (0, hydrometrie_1.default)();
     }
 }
-module.exports = HubeauApi;
+exports.default = HubeauApi;

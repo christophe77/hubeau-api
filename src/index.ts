@@ -6,7 +6,7 @@ import qualiteRivieres from './commandes/qualiteRivieres';
 import temperature from './commandes/temperature';
 import hydrometrie from './commandes/hydrometrie';
 
-class HubeauApi {
+export default class HubeauApi {
   etatPiscicole;
   indicateursServices;
   piezometrie;
@@ -24,4 +24,3 @@ class HubeauApi {
     this.hydrometrie = hydrometrie();
   }
 }
-module.exports = HubeauApi;

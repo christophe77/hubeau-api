@@ -1,4 +1,4 @@
-const HubeauApi = require('..');
+const HubeauApi = require('..').default;
 const hubeauApi = new HubeauApi();
 
 async function code_espece_poisson() {
