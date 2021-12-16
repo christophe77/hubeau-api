@@ -1,6 +1,6 @@
 {
   "name": "hubeau-api",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "hubeau api wrapper in javascript",
   "keywords": [
     "hubeau",
@@ -46,5 +46,8 @@
   },
   "peerDependencies": {},
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "@types/superagent": "^4.1.13",
+    "superagent": "^6.1.0"
+  }
 }
