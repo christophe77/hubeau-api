@@ -101,5 +101,5 @@ _référentiel stations_<br/>
 
 Exemples :<br/>
 CommonJS : [./exemples/cjs/hydrometrie.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/cjs/hydrometrie.js)<br/>
-CommonJS : [./exemples/esm/hydrometrie.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/esm/hydrometrie.js)<br/>
+ESM : [./exemples/esm/hydrometrie.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/esm/hydrometrie.js)<br/>
 Documentation officielle : https://hubeau.eaufrance.fr/page/api-hydrometrie<br/>
