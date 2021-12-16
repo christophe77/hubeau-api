@@ -1,6 +1,6 @@
 {
   "name": "hubeau-api",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "hubeau api wrapper in javascript",
   "keywords": [
     "hubeau",
