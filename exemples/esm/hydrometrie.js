@@ -1,4 +1,4 @@
-const hubeauApi = require('../dist/cjs');
+import { hydrometrie } from '../../dist/esm';
 
 async function obsElab() {
   const params = {
@@ -6,7 +6,7 @@ async function obsElab() {
     size: 5,
   };
   try {
-    const results = await hubeauApi.hydrometrie.obsElab(params);
+    const results = await hydrometrie.obsElab(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -18,7 +18,7 @@ async function obsElabCsv() {
     size: 5,
   };
   try {
-    const results = await hubeauApi.hydrometrie.obsElabCsv(params);
+    const results = await hydrometrie.obsElabCsv(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -30,7 +30,7 @@ async function observationsTr() {
     size: 5,
   };
   try {
-    const results = await hubeauApi.hydrometrie.observationsTr(params);
+    const results = await hydrometrie.observationsTr(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -42,7 +42,7 @@ async function observationsTrCsv() {
     size: 5,
   };
   try {
-    const results = await hubeauApi.hydrometrie.observationsTrCsv(params);
+    const results = await hydrometrie.observationsTrCsv(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -54,7 +54,7 @@ async function observationsTrXml() {
     size: 5,
   };
   try {
-    const results = await hubeauApi.hydrometrie.observationsTrXml(params);
+    const results = await hydrometrie.observationsTrXml(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -66,7 +66,7 @@ async function referentielSites() {
     size: 5,
   };
   try {
-    const results = await hubeauApi.hydrometrie.referentielSites(params);
+    const results = await hydrometrie.referentielSites(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -78,7 +78,7 @@ async function referentielSitesCsv() {
     size: 5,
   };
   try {
-    const results = await hubeauApi.hydrometrie.referentielSitesCsv(params);
+    const results = await hydrometrie.referentielSitesCsv(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -90,7 +90,7 @@ async function referentielSitesXml() {
     size: 5,
   };
   try {
-    const results = await hubeauApi.hydrometrie.referentielSitesXml(params);
+    const results = await hydrometrie.referentielSitesXml(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -102,7 +102,7 @@ async function referentielStations() {
     size: 5,
   };
   try {
-    const results = await hubeauApi.hydrometrie.referentielStations(params);
+    const results = await hydrometrie.referentielStations(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -114,7 +114,7 @@ async function referentielStationsCsv() {
     size: 5,
   };
   try {
-    const results = await hubeauApi.hydrometrie.referentielStationsCsv(params);
+    const results = await hydrometrie.referentielStationsCsv(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -126,7 +126,7 @@ async function referentielStationsXml() {
     size: 5,
   };
   try {
-    const results = await hubeauApi.hydrometrie.referentielStationsXml(params);
+    const results = await hydrometrie.referentielStationsXml(params);
     console.log(results);
   } catch (error) {
     console.log(error);

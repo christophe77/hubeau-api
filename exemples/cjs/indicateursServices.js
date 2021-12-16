@@ -1,4 +1,4 @@
-const hubeauApi = require('../dist/cjs');
+const hubeauApi = require('../../dist/cjs');
 
 async function communes() {
   const params = {

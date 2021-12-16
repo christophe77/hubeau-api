@@ -1,4 +1,4 @@
-const hubeauApi = require('../dist/cjs');
+import { temperature } from '../../dist/esm';
 
 async function chronique() {
   const params = {
@@ -8,7 +8,7 @@ async function chronique() {
     sort: 'asc',
   };
   try {
-    const results = await hubeauApi.temperature.chronique(params);
+    const results = await temperature.chronique(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -23,7 +23,7 @@ async function chroniqueCsv() {
     sort: 'asc',
   };
   try {
-    const results = await hubeauApi.temperature.chroniqueCsv(params);
+    const results = await temperature.chroniqueCsv(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -36,7 +36,7 @@ async function station() {
     size: 1,
   };
   try {
-    const results = await hubeauApi.temperature.station(params)
+    const results = await temperature.station(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -50,7 +50,7 @@ async function stationCsv() {
     size: 1,
   };
   try {
-    const results = await hubeauApi.temperature.stationCsv(params);
+    const results = await temperature.stationCsv(params);
     console.log(results);
   } catch (error) {
     console.log(error);

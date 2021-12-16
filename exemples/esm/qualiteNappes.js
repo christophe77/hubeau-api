@@ -1,4 +1,4 @@
-const hubeauApi = require('../dist/cjs');
+import { qualiteNappes } from '../../dist/esm';
 
 async function analyses() {
   const params = {
@@ -7,7 +7,7 @@ async function analyses() {
     size: 30,
   };
   try {
-    const results = await hubeauApi.qualiteNappes.analyses(params);
+    const results = await qualiteNappes.analyses(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -21,7 +21,7 @@ async function analysesCsv() {
     size: 30,
   };
   try {
-    const results = await hubeauApi.qualiteNappes.analysesCsv(params);
+    const results = await qualiteNappes.analysesCsv(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -35,7 +35,7 @@ async function stations() {
     size: 30,
   };
   try {
-    const results = await hubeauApi.qualiteNappes.stations(params);
+    const results = await qualiteNappes.stations(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -49,7 +49,7 @@ async function stationsCsv() {
     size: 30,
   };
   try {
-    const results = await hubeauApi.qualiteNappes.stationsCsv(params);
+    const results = await qualiteNappes.stationsCsv(params);
     console.log(results);
   } catch (error) {
     console.log(error);
