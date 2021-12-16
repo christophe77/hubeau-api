@@ -3,7 +3,7 @@ export declare type ChroniquesParams = {
     code_bss: string[];
     date_debut_mesure?: string;
     date_fin_mesure?: string;
-    fields?: string;
+    fields?: string[];
     page?: number;
     size?: number;
     sort?: 'asc' | 'desc';
@@ -14,7 +14,7 @@ export declare type ChroniquesTrParams = {
     code_bss?: string[];
     date_debut_mesure?: string;
     date_fin_mesure?: string;
-    fields?: string;
+    fields?: string[];
     niveau_ngf_max?: number;
     niveau_ngf_min?: number;
     page?: number;
@@ -32,7 +32,7 @@ export declare type StationsParams = {
     code_departement?: string[];
     codes_masse_eau_edl?: string[];
     date_recherche?: string;
-    fields?: string;
+    fields?: string[];
     format?: Format;
     nb_mesures_piezo_min?: number;
     page?: number;

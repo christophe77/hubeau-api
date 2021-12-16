@@ -6,7 +6,7 @@ export declare type ObsElabParams = {
     date_debut_obs_elab?: string;
     date_fin_obs_elab?: string;
     distance?: number;
-    fields?: string;
+    fields?: string[];
     grandeur_hydro_elab?: 'QmJ' | 'QmM';
     latitude?: number;
     longitude?: number;
@@ -21,7 +21,7 @@ export declare type ObservationsTrParams = {
     date_debut_obs_elab?: string;
     date_fin_obs_elab?: string;
     distance?: number;
-    fields?: string;
+    fields?: string[];
     grandeur_hydro_elab?: 'QmJ' | 'QmM';
     latitude?: number;
     longitude?: number;
@@ -41,7 +41,7 @@ export declare type ReferentielSitesParams = {
     distance?: number;
     libelle_cours_eau?: string[];
     libelle_site?: string[];
-    fields?: string;
+    fields?: string[];
     format?: Format;
     latitude?: number;
     longitude?: number;
@@ -61,7 +61,7 @@ export declare type ReferentielStationsParams = {
     date_fermeture_station?: string;
     date_ouverture_station?: string;
     en_service?: boolean;
-    fields?: string;
+    fields?: string[];
     format?: Format;
     latitude?: number;
     libelle_cours_eau?: string[];

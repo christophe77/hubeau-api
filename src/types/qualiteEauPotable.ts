@@ -27,7 +27,7 @@ export type ResultatsDisParams = {
   conformite_references_pc_prelevement?: string;
   date_max_prelevement?: string;
   date_min_prelevement?: string;
-  fields?: string;
+  fields?: string[];
   libelle_parametre?: string;
   libelle_parametre_maj?: string;
   nom_commune?: string[];

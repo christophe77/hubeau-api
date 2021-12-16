@@ -1,7 +1,7 @@
 import { Format, Mois } from './communs';
 export declare type CodeEspecePoissonParams = {
     code?: string;
-    fields?: string;
+    fields?: string[];
     page?: number;
     size?: number;
 };
@@ -24,7 +24,7 @@ export declare type PoissonsParams = {
     code_station?: string[];
     date_debut?: string;
     date_fin?: string;
-    fields?: string;
+    fields?: string[];
     format?: Format;
     mois_debut?: Mois;
     mois_fin?: Mois;

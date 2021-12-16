@@ -15,7 +15,7 @@ export declare type IndicesParams = {
     date_debut_prelevement?: string;
     date_fin_prelevement?: string;
     distance?: number;
-    fields?: string;
+    fields?: string[];
     format?: Format;
     page?: number;
     longitude?: number;
@@ -42,7 +42,7 @@ export declare type StationsHydrobioParams = {
     libelle_station_hydrobio?: string[];
     date_service?: string;
     distance?: number;
-    fields?: string;
+    fields?: string[];
     format?: Format;
     longitude?: number;
     latitude?: number;
@@ -68,7 +68,7 @@ export declare type TaxonssParams = {
     date_debut_prelevement?: string;
     date_fin_prelevement?: string;
     distance?: number;
-    fields?: string;
+    fields?: string[];
     format?: Format;
     longitude?: number;
     latitude?: number;

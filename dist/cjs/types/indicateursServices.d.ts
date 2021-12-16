@@ -5,7 +5,7 @@ export declare type CommunesParams = {
     code_commune?: string[];
     code_departement?: string[];
     detail_service?: boolean;
-    fields?: string;
+    fields?: string[];
     format?: Format;
     page?: number;
     size?: number;
@@ -14,7 +14,7 @@ export declare type CommunesParams = {
 export declare type IndicateursParams = {
     code_indicateur: CodeIndicateur;
     annee?: number;
-    fields?: string;
+    fields?: string[];
     format?: Format;
     page?: number;
     size?: number;
@@ -23,7 +23,7 @@ export declare type ServicesParams = {
     annee?: number;
     code_commune?: string[];
     code_departement?: string[];
-    fields?: string;
+    fields?: string[];
     format?: Format;
     page?: number;
     size?: number;

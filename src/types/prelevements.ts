@@ -12,7 +12,7 @@ export type ChroniquesParams = {
   code_statut_volume?: string[];
   code_usage?: string[];
   distance?: number;
-  fields?: string;
+  fields?: string[];
   format?: Format;
   latitude?: number;
   libelle_departement?: string[];
@@ -51,7 +51,7 @@ export type ReferentielOuvragesParams = {
   codes_points_prelevements?: string[];
   date_exploitation?: string;
   distance?: number;
-  fields?: string;
+  fields?: string[];
   format?: Format;
   latitude?: number;
   libelle_departement?: string[];
@@ -76,7 +76,7 @@ export type ReferentielPointsPrelevementParams = {
   code_type_milieu?: string[];
   code_zone_hydro?: string[];
   date_exploitation?: string;
-  fields?: string;
+  fields?: string[];
   libelle_departement?: string[];
   nappe_accompagnement?: boolean;
   nom_commune?: string[];
