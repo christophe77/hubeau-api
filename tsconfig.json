@@ -8,6 +8,6 @@
     "moduleResolution": "node",
     "strict": true
   },
-  "include": ["src"],
+  "include": ["src", "exemples/ts"],
   "exclude": ["node_modules", "dist"]
 }

@@ -12,4 +12,5 @@ exports.entryPoints = {
     hydrometrie: '/api/v1/hydrometrie/',
     prelevements: '/api/v1/prelevements/',
     hydrobio: '/api/vbeta/hydrobio/',
+    surveillanceLittoral: '/api/vbeta/surveillance_littoral/',
 };

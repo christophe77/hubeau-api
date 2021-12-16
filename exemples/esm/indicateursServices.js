@@ -1,4 +1,4 @@
-import { indicateursServices } from '../../dist/esm';
+const hubeauApi = require('../dist/cjs');
 
 async function communes() {
   const params = {
@@ -7,7 +7,7 @@ async function communes() {
     type_service: 'AEP',
   };
   try {
-    const results = await indicateursServices.communes(params);
+    const results = await hubeauApi.indicateursServices.communes(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -21,7 +21,7 @@ async function communesCsv() {
     type_service: 'AEP',
   };
   try {
-    const results = await indicateursServices.communesCsv(params);
+    const results = await hubeauApi.indicateursServices.communesCsv(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -34,7 +34,7 @@ async function indicateurs() {
     page: 1,
   };
   try {
-    const results = await indicateursServices.indicateurs(params);
+    const results = await hubeauApi.indicateursServices.indicateurs(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -47,7 +47,7 @@ async function indicateursCsv() {
     page: 1,
   };
   try {
-    const results = await indicateursServices.indicateursCsv(params);
+    const results = await hubeauApi.indicateursServices.indicateursCsv(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -60,7 +60,7 @@ async function services() {
     type_service: 'AEP',
   };
   try {
-    const results = await indicateursServices.services(params);
+    const results = await hubeauApi.indicateursServices.services(params);
     console.log(results);
   } catch (error) {
     console.log(error);
@@ -73,7 +73,7 @@ async function servicesCsv() {
     type_service: 'AEP',
   };
   try {
-    const results = await indicateursServices.servicesCsv(params);
+    const results = await hubeauApi.indicateursServices.servicesCsv(params);
     console.log(results);
   } catch (error) {
     console.log(error);

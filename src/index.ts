@@ -7,6 +7,7 @@ import temperature from './commandes/temperature';
 import hydrometrie from './commandes/hydrometrie';
 import prelevements from './commandes/prelevements';
 import hydrobio from './commandes/hydrobio';
+import surveillanceLittoral from './commandes/surveillanceLittoral';
 
 export {
   etatPiscicole,
@@ -18,4 +19,5 @@ export {
   hydrometrie,
   prelevements,
   hydrobio,
+  surveillanceLittoral,
 };

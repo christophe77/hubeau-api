@@ -126,3 +126,13 @@ Exemples :<br/>
 CommonJS : [./exemples/cjs/hydrobio.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/cjs/hydrobio.js)<br/>
 ESM : [./exemples/esm/hydrobio.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/esm/hydrobio.js)<br/>
 Documentation officielle : https://hubeau.eaufrance.fr/page/api-hydrobiologie<br/>
+
+### Surveillance du Littoral
+
+_contaminants chimiques_<br/>
+_lieux de surveillance_<br/>
+
+Exemples :<br/>
+CommonJS : [./exemples/cjs/surveillanceLittoral.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/cjs/surveillanceLittoral.js)<br/>
+ESM : [./exemples/esm/surveillanceLittoral.js](https://github.com/christophe77/hubeau-api-wrapper/blob/master/exemples/esm/surveillanceLittoral.js)<br/>
+Documentation officielle : https://hubeau.eaufrance.fr/page/api-surveillance-littoral<br/>

@@ -9,4 +9,5 @@ export declare const entryPoints: {
     hydrometrie: string;
     prelevements: string;
     hydrobio: string;
+    surveillanceLittoral: string;
 };
