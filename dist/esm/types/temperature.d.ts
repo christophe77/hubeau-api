@@ -52,7 +52,7 @@ export declare type StationParams = {
     libelle_bassin?: string[];
     bbox?: number[];
     size?: number;
-    fields?: string;
+    fields?: string[];
     page?: number;
     date_debut_prelevement?: string;
     date_fin_prelevement?: string;

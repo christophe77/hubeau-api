@@ -1,7 +1,8 @@
 type NestedObject = {
   [key: string]: string | number | boolean | string[] | number[];
 };
-type Response = {
+
+export type HubeauResponseJson = {
   count: number;
   prev: string;
   next: string;
@@ -15,7 +16,7 @@ type Response = {
       | NestedObject;
   };
 };
-export type HubeauResponse = string | Response;
+export type HubeauResponse = any;
 export type Mois = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 export type Format = 'json' | 'geojson';
 export type TypeService = 'AEP' | 'AC' | 'ANC';

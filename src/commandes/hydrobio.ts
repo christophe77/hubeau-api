@@ -1,5 +1,5 @@
 import { entryPoints } from '../constants';
-import getRequest from '../http';
+import {getRequest,getRequestCsv} from '../http';
 import { objectToStringParameters } from '../utils/utils';
 import { HubeauResponse } from '../types/communs';
 import { IndicesParams, StationsHydrobioParams,TaxonssParams } from '../types/hydrobio';
@@ -13,9 +13,9 @@ const hydrobio = {
     );
     return datas;
   },
-  indicesCsv: async (params?: IndicesParams): Promise<HubeauResponse> => {
+  indicesCsv: async (params?: IndicesParams): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.hydrobio,
       `/indices.csv?${formattedParams}`,
     );
@@ -33,9 +33,9 @@ const hydrobio = {
   },
   stationsHydrobioCsv: async (
     params?: StationsHydrobioParams,
-  ): Promise<HubeauResponse> => {
+  ): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.hydrobio,
       `/stations_hydrobio.csv?${formattedParams}`,
     );
@@ -49,9 +49,9 @@ const hydrobio = {
     );
     return datas;
   },
-  taxonsCsv: async (params?: TaxonssParams): Promise<HubeauResponse> => {
+  taxonsCsv: async (params?: TaxonssParams): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.hydrobio,
       `/taxons.csv?${formattedParams}`,
     );

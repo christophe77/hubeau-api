@@ -36,7 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 import superagent from 'superagent';
 import { hostname } from '../constants';
-function getRequest(entryPoint, args) {
+export function getRequest(entryPoint, args) {
     return __awaiter(this, void 0, void 0, function () {
         var res, err_1;
         return __generator(this, function (_a) {
@@ -46,13 +46,50 @@ function getRequest(entryPoint, args) {
                     return [4 /*yield*/, superagent.get("".concat(hostname).concat(entryPoint).concat(args))];
                 case 1:
                     res = _a.sent();
-                    return [2 /*return*/, res.text];
+                    return [2 /*return*/, JSON.parse(res.text)];
                 case 2:
                     err_1 = _a.sent();
-                    return [2 /*return*/, err_1.toString()];
+                    return [2 /*return*/, JSON.parse(err_1)];
                 case 3: return [2 /*return*/];
             }
         });
     });
 }
-export default getRequest;
+export function getRequestCsv(entryPoint, args) {
+    return __awaiter(this, void 0, void 0, function () {
+        var res, err_2;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 2, , 3]);
+                    return [4 /*yield*/, superagent.get("".concat(hostname).concat(entryPoint).concat(args))];
+                case 1:
+                    res = _a.sent();
+                    return [2 /*return*/, res.text];
+                case 2:
+                    err_2 = _a.sent();
+                    return [2 /*return*/, err_2.toString()];
+                case 3: return [2 /*return*/];
+            }
+        });
+    });
+}
+export function getRequestXml(entryPoint, args) {
+    return __awaiter(this, void 0, void 0, function () {
+        var res, err_3;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 2, , 3]);
+                    return [4 /*yield*/, superagent.get("".concat(hostname).concat(entryPoint).concat(args))];
+                case 1:
+                    res = _a.sent();
+                    return [2 /*return*/, res.text];
+                case 2:
+                    err_3 = _a.sent();
+                    return [2 /*return*/, err_3.toString()];
+                case 3: return [2 /*return*/];
+            }
+        });
+    });
+}

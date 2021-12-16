@@ -1,5 +1,5 @@
 import { entryPoints } from '../constants';
-import getRequest from '../http';
+import { getRequest, getRequestCsv } from '../http';
 import { objectToStringParameters } from '../utils/utils';
 import { HubeauResponse } from '../types/communs';
 import {
@@ -18,9 +18,9 @@ const qualiteRivieres = {
     );
     return datas;
   },
-  analysePcCsv: async (params?: AnalysePcParams): Promise<HubeauResponse> => {
+  analysePcCsv: async (params?: AnalysePcParams): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.qualiteRivieres,
       `/analyse_pc.csv?${formattedParams}`,
     );
@@ -34,9 +34,9 @@ const qualiteRivieres = {
     );
     return datas;
   },
-  stationPcCsv: async (params?: StationPcParams): Promise<HubeauResponse> => {
+  stationPcCsv: async (params?: StationPcParams): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.qualiteRivieres,
       `/station_pc.csv?${formattedParams}`,
     );
@@ -50,11 +50,9 @@ const qualiteRivieres = {
     );
     return datas;
   },
-  operationPcCsv: async (
-    params?: OperationPcParams,
-  ): Promise<HubeauResponse> => {
+  operationPcCsv: async (params?: OperationPcParams): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.qualiteRivieres,
       `/operation_pc.csv?${formattedParams}`,
     );
@@ -72,9 +70,9 @@ const qualiteRivieres = {
   },
   conditionEnvironnementalePcCsv: async (
     params?: ConditionEnvironnementaleParams,
-  ): Promise<HubeauResponse> => {
+  ): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.qualiteRivieres,
       `/condition_environnementale_pc.csv?${formattedParams}`,
     );

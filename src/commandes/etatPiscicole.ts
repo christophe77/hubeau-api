@@ -1,5 +1,5 @@
 import { entryPoints } from '../constants';
-import getRequest from '../http';
+import {getRequest,getRequestCsv} from '../http';
 import { objectToStringParameters } from '../utils/utils';
 import { HubeauResponse } from '../types/communs';
 import {
@@ -21,9 +21,9 @@ const etatPiscicole = {
   },
   codeEspecePoissonCsv: async (
     params?: CodeEspecePoissonParams,
-  ): Promise<HubeauResponse> => {
+  ): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.etatPiscicole,
       `/code_espece_poisson.csv?${formattedParams}`,
     );
@@ -37,9 +37,9 @@ const etatPiscicole = {
     );
     return datas;
   },
-  lieuxPecheCsv: async (params?: LieuxPecheParams): Promise<HubeauResponse> => {
+  lieuxPecheCsv: async (params?: LieuxPecheParams): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.etatPiscicole,
       `/lieux_peche.csv?${formattedParams}`,
     );
@@ -53,9 +53,9 @@ const etatPiscicole = {
     );
     return datas;
   },
-  poissonsCsv: async (params?: PoissonsParams): Promise<HubeauResponse> => {
+  poissonsCsv: async (params?: PoissonsParams): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.etatPiscicole,
       `/poissons.csv?${formattedParams}`,
     );

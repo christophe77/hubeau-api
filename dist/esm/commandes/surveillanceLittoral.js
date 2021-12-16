@@ -35,7 +35,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 import { entryPoints } from '../constants';
-import getRequest from '../http';
+import { getRequest, getRequestCsv } from '../http';
 import { objectToStringParameters } from '../utils/utils';
 var surveillanceLittoral = {
     contaminantsChimiques: function (params) { return __awaiter(void 0, void 0, void 0, function () {
@@ -57,7 +57,7 @@ var surveillanceLittoral = {
             switch (_a.label) {
                 case 0:
                     formattedParams = params ? objectToStringParameters(params) : '';
-                    return [4 /*yield*/, getRequest(entryPoints.surveillanceLittoral, "/contaminants_chimiques.csv?".concat(formattedParams))];
+                    return [4 /*yield*/, getRequestCsv(entryPoints.surveillanceLittoral, "/contaminants_chimiques.csv?".concat(formattedParams))];
                 case 1:
                     datas = _a.sent();
                     return [2 /*return*/, datas];
@@ -83,7 +83,7 @@ var surveillanceLittoral = {
             switch (_a.label) {
                 case 0:
                     formattedParams = params ? objectToStringParameters(params) : '';
-                    return [4 /*yield*/, getRequest(entryPoints.surveillanceLittoral, "/lieux_surv.csv?".concat(formattedParams))];
+                    return [4 /*yield*/, getRequestCsv(entryPoints.surveillanceLittoral, "/lieux_surv.csv?".concat(formattedParams))];
                 case 1:
                     datas = _a.sent();
                     return [2 /*return*/, datas];

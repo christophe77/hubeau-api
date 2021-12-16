@@ -1,5 +1,5 @@
 import { entryPoints } from '../constants';
-import getRequest from '../http';
+import {getRequest,getRequestCsv} from '../http';
 import { objectToStringParameters } from '../utils/utils';
 import { HubeauResponse } from '../types/communs';
 import {
@@ -20,9 +20,9 @@ const surveillanceLittoral = {
   },
   contaminantsChimiquesCsv: async (
     params?: ContaminantsChimiquesParams,
-  ): Promise<HubeauResponse> => {
+  ): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.surveillanceLittoral,
       `/contaminants_chimiques.csv?${formattedParams}`,
     );
@@ -36,9 +36,9 @@ const surveillanceLittoral = {
     );
     return datas;
   },
-  lieuxSurvCsv: async (params?: LieuxSurvParams): Promise<HubeauResponse> => {
+  lieuxSurvCsv: async (params?: LieuxSurvParams): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.surveillanceLittoral,
       `/lieux_surv.csv?${formattedParams}`,
     );

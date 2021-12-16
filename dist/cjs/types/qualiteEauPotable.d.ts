@@ -3,7 +3,7 @@ export declare type CommunesUdiParams = {
     annee?: number[];
     code_commune?: string[];
     code_reseau?: string[];
-    fields?: string;
+    fields?: string[];
     nom_commune?: string[];
     nom_reseau?: string[];
     page?: number;
@@ -27,7 +27,7 @@ export declare type ResultatsDisParams = {
     conformite_references_pc_prelevement?: string;
     date_max_prelevement?: string;
     date_min_prelevement?: string;
-    fields?: string;
+    fields?: string[];
     libelle_parametre?: string;
     libelle_parametre_maj?: string;
     nom_commune?: string[];

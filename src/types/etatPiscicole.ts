@@ -2,7 +2,7 @@ import { Format, Mois } from './communs';
 
 export type CodeEspecePoissonParams = {
   code?: string;
-  fields?: string;
+  fields?: string[];
   page?: number;
   size?: number;
 };
@@ -27,7 +27,7 @@ export type PoissonsParams = {
   code_station?: string[];
   date_debut?: string;
   date_fin?: string;
-  fields?: string;
+  fields?: string[];
   format?: Format;
   mois_debut?: Mois;
   mois_fin?: Mois;

@@ -1,8 +1,11 @@
 import { entryPoints } from '../constants';
-import getRequest from '../http';
+import { getRequest, getRequestCsv } from '../http';
 import { objectToStringParameters } from '../utils/utils';
 import { HubeauResponse } from '../types/communs';
-import { CommunesUdiParams, ResultatsDisParams } from '../types/qualiteEauPotable';
+import {
+  CommunesUdiParams,
+  ResultatsDisParams,
+} from '../types/qualiteEauPotable';
 
 const qualiteEauPotable = {
   communesUdi: async (params?: CommunesUdiParams): Promise<HubeauResponse> => {
@@ -13,15 +16,17 @@ const qualiteEauPotable = {
     );
     return datas;
   },
-  communesUdiCsv: async (params?: CommunesUdiParams): Promise<HubeauResponse> => {
+  communesUdiCsv: async (params?: CommunesUdiParams): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.qualiteEauPotable,
       `/communes_udi.csv?${formattedParams}`,
     );
     return datas;
   },
-  resultatsDis: async (params?: ResultatsDisParams): Promise<HubeauResponse> => {
+  resultatsDis: async (
+    params?: ResultatsDisParams,
+  ): Promise<HubeauResponse> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
     const datas = await getRequest(
       entryPoints.qualiteEauPotable,
@@ -29,9 +34,9 @@ const qualiteEauPotable = {
     );
     return datas;
   },
-  resultatsDisCsv: async (params?: ResultatsDisParams): Promise<HubeauResponse> => {
+  resultatsDisCsv: async (params?: ResultatsDisParams): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.qualiteEauPotable,
       `/resultats_dis.csv?${formattedParams}`,
     );

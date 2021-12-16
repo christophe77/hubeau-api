@@ -1,5 +1,5 @@
 import { entryPoints } from '../constants';
-import getRequest from '../http';
+import {getRequest,getRequestCsv} from '../http';
 import { objectToStringParameters } from '../utils/utils';
 import { HubeauResponse } from '../types/communs';
 import {
@@ -17,9 +17,9 @@ const prelevements = {
     );
     return datas;
   },
-  chroniquesCsv: async (params?: ChroniquesParams): Promise<HubeauResponse> => {
+  chroniquesCsv: async (params?: ChroniquesParams): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.prelevements,
       `/chroniques.csv?${formattedParams}`,
     );
@@ -37,9 +37,9 @@ const prelevements = {
   },
   referentielOuvragesCsv: async (
     params?: ReferentielOuvragesParams,
-  ): Promise<HubeauResponse> => {
+  ): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.prelevements,
       `/referentiel/ouvrages.csv?${formattedParams}`,
     );
@@ -57,9 +57,9 @@ const prelevements = {
   },
   referentielPointsPrelevementCsv: async (
     params?: ReferentielPointsPrelevementParams,
-  ): Promise<HubeauResponse> => {
+  ): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.prelevements,
       `/referentiel/points_prelevement.csv?${formattedParams}`,
     );

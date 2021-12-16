@@ -1,5 +1,5 @@
 import { entryPoints } from '../constants';
-import getRequest from '../http';
+import {getRequest,getRequestCsv} from '../http';
 import { objectToStringParameters } from '../utils/utils';
 import { HubeauResponse } from '../types/communs';
 import {
@@ -17,9 +17,9 @@ const piezometrie = {
     );
     return datas;
   },
-  chroniquesCsv: async (params?: ChroniquesParams): Promise<HubeauResponse> => {
+  chroniquesCsv: async (params?: ChroniquesParams): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.piezometrie,
       `/chroniques.csv?${formattedParams}`,
     );
@@ -37,9 +37,9 @@ const piezometrie = {
   },
   chroniquesTrCsv: async (
     params?: ChroniquesTrParams,
-  ): Promise<HubeauResponse> => {
+  ): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.piezometrie,
       `/chroniques_tr.csv?${formattedParams}`,
     );
@@ -53,9 +53,9 @@ const piezometrie = {
     );
     return datas;
   },
-  stationsCsv: async (params?: StationsParams): Promise<HubeauResponse> => {
+  stationsCsv: async (params?: StationsParams): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.piezometrie,
       `/stations.csv?${formattedParams}`,
     );

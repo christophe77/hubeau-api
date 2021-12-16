@@ -26,7 +26,7 @@ export type AnalysesParams = {
   date_fin_prelevement?: string;
   date_max_maj?: string;
   date_min_maj?: string;
-  fields?: string;
+  fields?: string[];
   nom_bassin_dce?: string[];
   nom_circonscription_administrative_bassin?: string[];
   nom_commune_actuel?: string[];
@@ -68,7 +68,7 @@ export type StationsParams = {
   nom_masse_eau_rap?: string[];
   date_max_maj?: string;
   date_min_maj?: string;
-  fields?: string;
+  fields?: string[];
   format?: Format;
   nom_region?: string[];
   nom_reseau?: string[];

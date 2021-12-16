@@ -35,7 +35,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 import { entryPoints } from '../constants';
-import getRequest from '../http';
+import { getRequest, getRequestCsv, getRequestXml } from '../http';
 import { objectToStringParameters } from '../utils/utils';
 var hydrometrie = {
     obsElab: function (params) { return __awaiter(void 0, void 0, void 0, function () {
@@ -57,7 +57,7 @@ var hydrometrie = {
             switch (_a.label) {
                 case 0:
                     formattedParams = params ? objectToStringParameters(params) : '';
-                    return [4 /*yield*/, getRequest(entryPoints.hydrometrie, "/obs_elab.csv?".concat(formattedParams))];
+                    return [4 /*yield*/, getRequestCsv(entryPoints.hydrometrie, "/obs_elab.csv?".concat(formattedParams))];
                 case 1:
                     datas = _a.sent();
                     return [2 /*return*/, datas];
@@ -83,7 +83,7 @@ var hydrometrie = {
             switch (_a.label) {
                 case 0:
                     formattedParams = params ? objectToStringParameters(params) : '';
-                    return [4 /*yield*/, getRequest(entryPoints.hydrometrie, "/observations_tr.csv?".concat(formattedParams))];
+                    return [4 /*yield*/, getRequestCsv(entryPoints.hydrometrie, "/observations_tr.csv?".concat(formattedParams))];
                 case 1:
                     datas = _a.sent();
                     return [2 /*return*/, datas];
@@ -96,7 +96,7 @@ var hydrometrie = {
             switch (_a.label) {
                 case 0:
                     formattedParams = params ? objectToStringParameters(params) : '';
-                    return [4 /*yield*/, getRequest(entryPoints.hydrometrie, "/observations_tr.xml?".concat(formattedParams))];
+                    return [4 /*yield*/, getRequestXml(entryPoints.hydrometrie, "/observations_tr.xml?".concat(formattedParams))];
                 case 1:
                     datas = _a.sent();
                     return [2 /*return*/, datas];
@@ -122,7 +122,7 @@ var hydrometrie = {
             switch (_a.label) {
                 case 0:
                     formattedParams = params ? objectToStringParameters(params) : '';
-                    return [4 /*yield*/, getRequest(entryPoints.hydrometrie, "/referentiel/sites.csv?".concat(formattedParams))];
+                    return [4 /*yield*/, getRequestCsv(entryPoints.hydrometrie, "/referentiel/sites.csv?".concat(formattedParams))];
                 case 1:
                     datas = _a.sent();
                     return [2 /*return*/, datas];
@@ -135,7 +135,7 @@ var hydrometrie = {
             switch (_a.label) {
                 case 0:
                     formattedParams = params ? objectToStringParameters(params) : '';
-                    return [4 /*yield*/, getRequest(entryPoints.hydrometrie, "/referentiel/sites.xml?".concat(formattedParams))];
+                    return [4 /*yield*/, getRequestXml(entryPoints.hydrometrie, "/referentiel/sites.xml?".concat(formattedParams))];
                 case 1:
                     datas = _a.sent();
                     return [2 /*return*/, datas];
@@ -161,7 +161,7 @@ var hydrometrie = {
             switch (_a.label) {
                 case 0:
                     formattedParams = params ? objectToStringParameters(params) : '';
-                    return [4 /*yield*/, getRequest(entryPoints.hydrometrie, "/referentiel/sites.csv?".concat(formattedParams))];
+                    return [4 /*yield*/, getRequestCsv(entryPoints.hydrometrie, "/referentiel/sites.csv?".concat(formattedParams))];
                 case 1:
                     datas = _a.sent();
                     return [2 /*return*/, datas];
@@ -174,7 +174,7 @@ var hydrometrie = {
             switch (_a.label) {
                 case 0:
                     formattedParams = params ? objectToStringParameters(params) : '';
-                    return [4 /*yield*/, getRequest(entryPoints.hydrometrie, "/referentiel/sites.xml?".concat(formattedParams))];
+                    return [4 /*yield*/, getRequestCsv(entryPoints.hydrometrie, "/referentiel/sites.xml?".concat(formattedParams))];
                 case 1:
                     datas = _a.sent();
                     return [2 /*return*/, datas];

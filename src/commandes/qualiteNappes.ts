@@ -1,5 +1,5 @@
 import { entryPoints } from '../constants';
-import getRequest from '../http';
+import {getRequest,getRequestCsv} from '../http';
 import { objectToStringParameters } from '../utils/utils';
 import { HubeauResponse } from '../types/communs';
 import { AnalysesParams, StationsParams } from '../types/qualiteNappes';
@@ -13,9 +13,9 @@ const qualiteNappes = {
     );
     return datas;
   },
-  analysesCsv: async (params?: AnalysesParams): Promise<HubeauResponse> => {
+  analysesCsv: async (params?: AnalysesParams): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.qualiteNappes,
       `/analyses.csv?${formattedParams}`,
     );
@@ -29,9 +29,9 @@ const qualiteNappes = {
     );
     return datas;
   },
-  stationsCsv: async (params?: StationsParams): Promise<HubeauResponse> => {
+  stationsCsv: async (params?: StationsParams): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.qualiteNappes,
       `/stations.csv?${formattedParams}`,
     );

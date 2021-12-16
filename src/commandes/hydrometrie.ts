@@ -1,5 +1,5 @@
 import { entryPoints } from '../constants';
-import getRequest from '../http';
+import {getRequest,getRequestCsv, getRequestXml} from '../http';
 import { objectToStringParameters } from '../utils/utils';
 import { HubeauResponse } from '../types/communs';
 import {
@@ -18,9 +18,9 @@ const hydrometrie = {
     );
     return datas;
   },
-  obsElabCsv: async (params?: ObsElabParams): Promise<HubeauResponse> => {
+  obsElabCsv: async (params?: ObsElabParams): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.hydrometrie,
       `/obs_elab.csv?${formattedParams}`,
     );
@@ -38,9 +38,9 @@ const hydrometrie = {
   },
   observationsTrCsv: async (
     params?: ObservationsTrParams,
-  ): Promise<HubeauResponse> => {
+  ): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.hydrometrie,
       `/observations_tr.csv?${formattedParams}`,
     );
@@ -48,9 +48,9 @@ const hydrometrie = {
   },
   observationsTrXml: async (
     params?: ObservationsTrParams,
-  ): Promise<HubeauResponse> => {
+  ): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestXml(
       entryPoints.hydrometrie,
       `/observations_tr.xml?${formattedParams}`,
     );
@@ -68,9 +68,9 @@ const hydrometrie = {
   },
   referentielSitesCsv: async (
     params?: ReferentielSitesParams,
-  ): Promise<HubeauResponse> => {
+  ): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.hydrometrie,
       `/referentiel/sites.csv?${formattedParams}`,
     );
@@ -78,9 +78,9 @@ const hydrometrie = {
   },
   referentielSitesXml: async (
     params?: ReferentielSitesParams,
-  ): Promise<HubeauResponse> => {
+  ): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestXml(
       entryPoints.hydrometrie,
       `/referentiel/sites.xml?${formattedParams}`,
     );
@@ -98,9 +98,9 @@ const hydrometrie = {
   },
   referentielStationsCsv: async (
     params?: ReferentielStationsParams,
-  ): Promise<HubeauResponse> => {
+  ): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.hydrometrie,
       `/referentiel/sites.csv?${formattedParams}`,
     );
@@ -108,9 +108,9 @@ const hydrometrie = {
   },
   referentielStationsXml: async (
     params?: ReferentielStationsParams,
-  ): Promise<HubeauResponse> => {
+  ): Promise<string> => {
     const formattedParams = params ? objectToStringParameters(params) : '';
-    const datas = await getRequest(
+    const datas = await getRequestCsv(
       entryPoints.hydrometrie,
       `/referentiel/sites.xml?${formattedParams}`,
     );

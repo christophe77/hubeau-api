@@ -39,6 +39,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.getRequestXml = exports.getRequestCsv = exports.getRequest = void 0;
 var superagent_1 = __importDefault(require("superagent"));
 var constants_1 = require("../constants");
 function getRequest(entryPoint, args) {
@@ -51,13 +52,53 @@ function getRequest(entryPoint, args) {
                     return [4 /*yield*/, superagent_1.default.get("".concat(constants_1.hostname).concat(entryPoint).concat(args))];
                 case 1:
                     res = _a.sent();
-                    return [2 /*return*/, res.text];
+                    return [2 /*return*/, JSON.parse(res.text)];
                 case 2:
                     err_1 = _a.sent();
-                    return [2 /*return*/, err_1.toString()];
+                    return [2 /*return*/, JSON.parse(err_1)];
                 case 3: return [2 /*return*/];
             }
         });
     });
 }
-exports.default = getRequest;
+exports.getRequest = getRequest;
+function getRequestCsv(entryPoint, args) {
+    return __awaiter(this, void 0, void 0, function () {
+        var res, err_2;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 2, , 3]);
+                    return [4 /*yield*/, superagent_1.default.get("".concat(constants_1.hostname).concat(entryPoint).concat(args))];
+                case 1:
+                    res = _a.sent();
+                    return [2 /*return*/, res.text];
+                case 2:
+                    err_2 = _a.sent();
+                    return [2 /*return*/, err_2.toString()];
+                case 3: return [2 /*return*/];
+            }
+        });
+    });
+}
+exports.getRequestCsv = getRequestCsv;
+function getRequestXml(entryPoint, args) {
+    return __awaiter(this, void 0, void 0, function () {
+        var res, err_3;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 2, , 3]);
+                    return [4 /*yield*/, superagent_1.default.get("".concat(constants_1.hostname).concat(entryPoint).concat(args))];
+                case 1:
+                    res = _a.sent();
+                    return [2 /*return*/, res.text];
+                case 2:
+                    err_3 = _a.sent();
+                    return [2 /*return*/, err_3.toString()];
+                case 3: return [2 /*return*/];
+            }
+        });
+    });
+}
+exports.getRequestXml = getRequestXml;

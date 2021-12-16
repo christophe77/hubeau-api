@@ -23,7 +23,7 @@ export declare type ContaminantsChimiquesParams = {
     longitude?: number;
     latitude?: number;
     distance?: number;
-    fields?: string;
+    fields?: string[];
     format?: Format;
     libelle_lieusurv?: string[];
     libelle_parametre?: string[];
@@ -42,7 +42,7 @@ export declare type LieuxSurvParams = {
     donnees_cc?: boolean;
     longitude?: number;
     latitude?: number;
-    fields?: string;
+    fields?: string[];
     format?: Format;
     libelle_lieusurv?: string[];
     noms_masses_eau?: string[];

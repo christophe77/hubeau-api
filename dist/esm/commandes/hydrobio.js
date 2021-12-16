@@ -35,7 +35,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 import { entryPoints } from '../constants';
-import getRequest from '../http';
+import { getRequest, getRequestCsv } from '../http';
 import { objectToStringParameters } from '../utils/utils';
 var hydrobio = {
     indices: function (params) { return __awaiter(void 0, void 0, void 0, function () {
@@ -57,7 +57,7 @@ var hydrobio = {
             switch (_a.label) {
                 case 0:
                     formattedParams = params ? objectToStringParameters(params) : '';
-                    return [4 /*yield*/, getRequest(entryPoints.hydrobio, "/indices.csv?".concat(formattedParams))];
+                    return [4 /*yield*/, getRequestCsv(entryPoints.hydrobio, "/indices.csv?".concat(formattedParams))];
                 case 1:
                     datas = _a.sent();
                     return [2 /*return*/, datas];
@@ -83,7 +83,7 @@ var hydrobio = {
             switch (_a.label) {
                 case 0:
                     formattedParams = params ? objectToStringParameters(params) : '';
-                    return [4 /*yield*/, getRequest(entryPoints.hydrobio, "/stations_hydrobio.csv?".concat(formattedParams))];
+                    return [4 /*yield*/, getRequestCsv(entryPoints.hydrobio, "/stations_hydrobio.csv?".concat(formattedParams))];
                 case 1:
                     datas = _a.sent();
                     return [2 /*return*/, datas];
@@ -109,7 +109,7 @@ var hydrobio = {
             switch (_a.label) {
                 case 0:
                     formattedParams = params ? objectToStringParameters(params) : '';
-                    return [4 /*yield*/, getRequest(entryPoints.hydrobio, "/taxons.csv?".concat(formattedParams))];
+                    return [4 /*yield*/, getRequestCsv(entryPoints.hydrobio, "/taxons.csv?".concat(formattedParams))];
                 case 1:
                     datas = _a.sent();
                     return [2 /*return*/, datas];
