@@ -1,5 +1,5 @@
 import { Format } from './communs';
-export declare type AnalysesParams = {
+export type AnalysesParams = {
     bbox?: number[];
     bss_id?: string[];
     code_bassin_dce?: string[];
@@ -53,7 +53,7 @@ export declare type AnalysesParams = {
     size?: number;
     sort?: 'asc' | 'desc';
 };
-export declare type StationsParams = {
+export type StationsParams = {
     bassin_dce?: string[];
     bbox?: number[];
     bss_id?: string[];

@@ -1,5 +1,5 @@
 import { Format } from './communs';
-export declare type IndicesParams = {
+export type IndicesParams = {
     bbox?: number[];
     code_bassin?: string[];
     code_commune?: string[];
@@ -25,7 +25,7 @@ export declare type IndicesParams = {
     resultat_indice_min?: number;
     size?: number;
 };
-export declare type StationsHydrobioParams = {
+export type StationsHydrobioParams = {
     bbox?: number[];
     code_bassin?: string[];
     code_commune?: string[];
@@ -49,7 +49,7 @@ export declare type StationsHydrobioParams = {
     page?: number;
     size?: number;
 };
-export declare type TaxonssParams = {
+export type TaxonssParams = {
     bbox?: number[];
     code_appel_taxon?: string[];
     code_bassin?: string[];

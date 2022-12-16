@@ -1,6 +1,6 @@
 {
   "name": "hubeau-api",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "hubeau api wrapper in javascript",
   "keywords": [
     "hubeau",
@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
-    "@types/node": "^17.0.23",
+    "@types/node": "^18.11.15",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
     "@typescript-eslint/parser": "^5.17.0",
     "eslint": "^8.12.0",

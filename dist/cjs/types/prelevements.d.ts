@@ -1,5 +1,5 @@
 import { Format, Sort } from './communs';
-export declare type ChroniquesParams = {
+export type ChroniquesParams = {
     annee?: number[];
     bbox?: number[];
     code_commune_insee?: string[];
@@ -25,7 +25,7 @@ export declare type ChroniquesParams = {
     volume_min?: number;
     volume_max?: number;
 };
-export declare type ReferentielOuvragesParams = {
+export type ReferentielOuvragesParams = {
     bbox?: number[];
     code_bdlisa?: string[];
     code_commune_insee?: string[];
@@ -49,7 +49,7 @@ export declare type ReferentielOuvragesParams = {
     size?: number;
     sort?: Sort;
 };
-export declare type ReferentielPointsPrelevementParams = {
+export type ReferentielPointsPrelevementParams = {
     code_bdlisa?: string[];
     code_bss_point_eau?: string[];
     code_commune_insee?: string[];

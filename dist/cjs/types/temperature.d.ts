@@ -1,5 +1,5 @@
 import { Format, Sort } from './communs';
-export declare type ChroniqueParams = {
+export type ChroniqueParams = {
     code_station?: string[];
     libelle_station?: string[];
     code_commune?: string[];
@@ -32,7 +32,7 @@ export declare type ChroniqueParams = {
     exact_count?: boolean;
     format?: Format;
 };
-export declare type StationParams = {
+export type StationParams = {
     code_station?: string[];
     libelle_station?: string[];
     code_commune?: string[];

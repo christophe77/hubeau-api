@@ -1,5 +1,5 @@
 import { Format } from './communs';
-export declare type ChroniquesParams = {
+export type ChroniquesParams = {
     code_bss: string[];
     date_debut_mesure?: string;
     date_fin_mesure?: string;
@@ -8,7 +8,7 @@ export declare type ChroniquesParams = {
     size?: number;
     sort?: 'asc' | 'desc';
 };
-export declare type ChroniquesTrParams = {
+export type ChroniquesTrParams = {
     bbox?: number[];
     bss_id?: string[];
     code_bss?: string[];
@@ -23,7 +23,7 @@ export declare type ChroniquesTrParams = {
     size?: number;
     sort?: 'asc' | 'desc';
 };
-export declare type StationsParams = {
+export type StationsParams = {
     bbox?: number[];
     bss_id?: string[];
     code_bdlisa?: string[];

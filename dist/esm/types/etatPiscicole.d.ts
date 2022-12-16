@@ -1,11 +1,11 @@
 import { Format, Mois } from './communs';
-export declare type CodeEspecePoissonParams = {
+export type CodeEspecePoissonParams = {
     code?: string;
     fields?: string[];
     page?: number;
     size?: number;
 };
-export declare type LieuxPecheParams = {
+export type LieuxPecheParams = {
     code_espece_poisson: string[];
     bbox?: number[];
     code_commune?: string;
@@ -18,7 +18,7 @@ export declare type LieuxPecheParams = {
     size?: number;
     srid?: number;
 };
-export declare type PoissonsParams = {
+export type PoissonsParams = {
     code_espece_poisson?: string[];
     annee?: number[];
     code_station?: string[];

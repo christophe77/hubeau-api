@@ -1,5 +1,5 @@
 import { Format, Sort } from './communs';
-export declare type ObsElabParams = {
+export type ObsElabParams = {
     bbox?: number[];
     code_entite?: string[];
     cursor?: string;
@@ -14,7 +14,7 @@ export declare type ObsElabParams = {
     resultat_max?: number;
     size?: number;
 };
-export declare type ObservationsTrParams = {
+export type ObservationsTrParams = {
     bbox?: number[];
     code_entite?: string[];
     cursor?: string;
@@ -29,7 +29,7 @@ export declare type ObservationsTrParams = {
     sort?: Sort;
     timestep?: number;
 };
-export declare type ReferentielSitesParams = {
+export type ReferentielSitesParams = {
     bbox?: number[];
     code_commune_site?: string[];
     code_cours_eau?: string[];
@@ -48,7 +48,7 @@ export declare type ReferentielSitesParams = {
     page?: number;
     size?: number;
 };
-export declare type ReferentielStationsParams = {
+export type ReferentielStationsParams = {
     bbox?: number[];
     code_commune_station?: string[];
     code_sandre_reseau_station?: string[];

@@ -1,5 +1,5 @@
 import { Format } from './communs';
-export declare type ContaminantsChimiquesParams = {
+export type ContaminantsChimiquesParams = {
     bbox?: number[];
     code_analyse?: number[];
     code_echantillon?: number[];
@@ -30,7 +30,7 @@ export declare type ContaminantsChimiquesParams = {
     page?: number;
     size?: number;
 };
-export declare type LieuxSurvParams = {
+export type LieuxSurvParams = {
     bbox?: number[];
     code_lieusurv?: number[];
     codes_masses_eau?: string[];

@@ -1,5 +1,5 @@
 import { Sort } from './communs';
-export declare type CommunesUdiParams = {
+export type CommunesUdiParams = {
     annee?: number[];
     code_commune?: string[];
     code_reseau?: string[];
@@ -10,7 +10,7 @@ export declare type CommunesUdiParams = {
     size?: number;
     sort?: Sort;
 };
-export declare type ResultatsDisParams = {
+export type ResultatsDisParams = {
     borne_inf_resultat?: number;
     borne_sup_resultat?: number;
     code_commune?: string[];
